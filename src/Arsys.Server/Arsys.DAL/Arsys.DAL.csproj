@@ -10,4 +10,14 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.9" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Data\Repositories\" />
+    <Folder Include="Data\Extensions\" />
+    <Folder Include="Logging\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Arsys.Domain\Arsys.Domain.csproj" />
+  </ItemGroup>
+
 </Project>

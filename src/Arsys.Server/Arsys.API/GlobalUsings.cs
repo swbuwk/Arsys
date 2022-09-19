@@ -1,1 +1,3 @@
 ﻿global using Microsoft.AspNetCore.Mvc;
+global using Arsys.DAL;
+global using Microsoft.EntityFrameworkCore;

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "xXx0SsLLMaevjU/HjEu/XYdEGnitDdzMbc9Iz4eT8zO08tQymtryvbRxjXLRPME7BSx2Snytygeyn3/tbuXCqA==",
+  "dgSpecHash": "ycru1fJpQnJBbeXIGy5BZrmBqsbynxmRyspvB/sf11S3ce0ltVCMQXhZneCsXJ2D345xnq70pu4FHCOWXeAJMw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Egor\\Desktop\\ARSYS\\src\\Arsys.Server\\Arsys.DAL\\Arsys.DAL.csproj",
+  "projectFilePath": "C:\\Users\\Egor\\source\\repos\\Arsys\\src\\Arsys.Server\\Arsys.DAL\\Arsys.DAL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Egor\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.9\\microsoft.entityframeworkcore.6.0.9.nupkg.sha512",
     "C:\\Users\\Egor\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.9\\microsoft.entityframeworkcore.abstractions.6.0.9.nupkg.sha512",

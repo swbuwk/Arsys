@@ -7,7 +7,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Models\" />
+    <Folder Include="Base\" />
+    <Folder Include="Entities\CashDesk\" />
+    <Folder Include="Entities\Storage\" />
   </ItemGroup>
 
 </Project>

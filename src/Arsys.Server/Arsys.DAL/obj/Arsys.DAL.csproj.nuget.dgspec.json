@@ -1,17 +1,82 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Egor\\Desktop\\ARSYS\\src\\Arsys.Server\\Arsys.DAL\\Arsys.DAL.csproj": {}
+    "C:\\Users\\Egor\\source\\repos\\Arsys\\src\\Arsys.Server\\Arsys.DAL\\Arsys.DAL.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Egor\\Desktop\\ARSYS\\src\\Arsys.Server\\Arsys.DAL\\Arsys.DAL.csproj": {
+    "C:\\Users\\Egor\\source\\repos\\Arsys\\src\\Arsys.Server\\Arsys.DAL\\Arsys.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Egor\\Desktop\\ARSYS\\src\\Arsys.Server\\Arsys.DAL\\Arsys.DAL.csproj",
+        "projectUniqueName": "C:\\Users\\Egor\\source\\repos\\Arsys\\src\\Arsys.Server\\Arsys.DAL\\Arsys.DAL.csproj",
         "projectName": "Arsys.DAL",
-        "projectPath": "C:\\Users\\Egor\\Desktop\\ARSYS\\src\\Arsys.Server\\Arsys.DAL\\Arsys.DAL.csproj",
+        "projectPath": "C:\\Users\\Egor\\source\\repos\\Arsys\\src\\Arsys.Server\\Arsys.DAL\\Arsys.DAL.csproj",
         "packagesPath": "C:\\Users\\Egor\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Egor\\Desktop\\ARSYS\\src\\Arsys.Server\\Arsys.DAL\\obj\\",
+        "outputPath": "C:\\Users\\Egor\\source\\repos\\Arsys\\src\\Arsys.Server\\Arsys.DAL\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Egor\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\Egor\\source\\repos\\Arsys\\src\\Arsys.Server\\Arsys.Domain\\Arsys.Domain.csproj": {
+                "projectPath": "C:\\Users\\Egor\\source\\repos\\Arsys\\src\\Arsys.Server\\Arsys.Domain\\Arsys.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.9, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Egor\\source\\repos\\Arsys\\src\\Arsys.Server\\Arsys.Domain\\Arsys.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Egor\\source\\repos\\Arsys\\src\\Arsys.Server\\Arsys.Domain\\Arsys.Domain.csproj",
+        "projectName": "Arsys.Domain",
+        "projectPath": "C:\\Users\\Egor\\source\\repos\\Arsys\\src\\Arsys.Server\\Arsys.Domain\\Arsys.Domain.csproj",
+        "packagesPath": "C:\\Users\\Egor\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Egor\\source\\repos\\Arsys\\src\\Arsys.Server\\Arsys.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Egor\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -39,12 +104,6 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "dependencies": {
-            "Microsoft.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[6.0.9, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",

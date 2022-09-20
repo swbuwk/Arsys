@@ -1,0 +1,12 @@
+C:\Users\Tema\Desktop\Workin\MyProjects\Arsys\src\Arsys.Server\Arsys.Domain\bin\Debug\net6.0\Arsys.Domain.deps.json
+C:\Users\Tema\Desktop\Workin\MyProjects\Arsys\src\Arsys.Server\Arsys.Domain\bin\Debug\net6.0\Arsys.Domain.dll
+C:\Users\Tema\Desktop\Workin\MyProjects\Arsys\src\Arsys.Server\Arsys.Domain\bin\Debug\net6.0\Arsys.Domain.pdb
+C:\Users\Tema\Desktop\Workin\MyProjects\Arsys\src\Arsys.Server\Arsys.Domain\obj\Debug\net6.0\Arsys.Domain.csproj.AssemblyReference.cache
+C:\Users\Tema\Desktop\Workin\MyProjects\Arsys\src\Arsys.Server\Arsys.Domain\obj\Debug\net6.0\Arsys.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Tema\Desktop\Workin\MyProjects\Arsys\src\Arsys.Server\Arsys.Domain\obj\Debug\net6.0\Arsys.Domain.AssemblyInfoInputs.cache
+C:\Users\Tema\Desktop\Workin\MyProjects\Arsys\src\Arsys.Server\Arsys.Domain\obj\Debug\net6.0\Arsys.Domain.AssemblyInfo.cs
+C:\Users\Tema\Desktop\Workin\MyProjects\Arsys\src\Arsys.Server\Arsys.Domain\obj\Debug\net6.0\Arsys.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Tema\Desktop\Workin\MyProjects\Arsys\src\Arsys.Server\Arsys.Domain\obj\Debug\net6.0\Arsys.Domain.dll
+C:\Users\Tema\Desktop\Workin\MyProjects\Arsys\src\Arsys.Server\Arsys.Domain\obj\Debug\net6.0\refint\Arsys.Domain.dll
+C:\Users\Tema\Desktop\Workin\MyProjects\Arsys\src\Arsys.Server\Arsys.Domain\obj\Debug\net6.0\Arsys.Domain.pdb
+C:\Users\Tema\Desktop\Workin\MyProjects\Arsys\src\Arsys.Server\Arsys.Domain\obj\Debug\net6.0\ref\Arsys.Domain.dll

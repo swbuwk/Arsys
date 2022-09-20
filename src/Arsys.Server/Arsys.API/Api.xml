@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Temas_Backend_Api</name>
+    </assembly>
+    <members>
+        <member name="T:Arsys.API.Swagger.SwaggerAddEnumDescriptions">
+            <summary>
+            Фильтр обработки enums
+            </summary>
+        </member>
+    </members>
+</doc>

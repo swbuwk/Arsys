@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Egor\\source\\repos\\Arsys\\src\\Arsys.Server\\Arsys.API\\Arsys.API.csproj": {}
+    "C:\\Users\\Tema\\Desktop\\Workin\\MyProjects\\Arsys\\src\\Arsys.Server\\Arsys.API\\Arsys.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Egor\\source\\repos\\Arsys\\src\\Arsys.Server\\Arsys.API\\Arsys.API.csproj": {
+    "C:\\Users\\Tema\\Desktop\\Workin\\MyProjects\\Arsys\\src\\Arsys.Server\\Arsys.API\\Arsys.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Egor\\source\\repos\\Arsys\\src\\Arsys.Server\\Arsys.API\\Arsys.API.csproj",
+        "projectUniqueName": "C:\\Users\\Tema\\Desktop\\Workin\\MyProjects\\Arsys\\src\\Arsys.Server\\Arsys.API\\Arsys.API.csproj",
         "projectName": "Arsys.API",
-        "projectPath": "C:\\Users\\Egor\\source\\repos\\Arsys\\src\\Arsys.Server\\Arsys.API\\Arsys.API.csproj",
-        "packagesPath": "C:\\Users\\Egor\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Egor\\source\\repos\\Arsys\\src\\Arsys.Server\\Arsys.API\\obj\\",
+        "projectPath": "C:\\Users\\Tema\\Desktop\\Workin\\MyProjects\\Arsys\\src\\Arsys.Server\\Arsys.API\\Arsys.API.csproj",
+        "packagesPath": "C:\\Users\\Tema\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Tema\\Desktop\\Workin\\MyProjects\\Arsys\\src\\Arsys.Server\\Arsys.API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Egor\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Tema\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,8 +28,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Egor\\source\\repos\\Arsys\\src\\Arsys.Server\\Arsys.DAL\\Arsys.DAL.csproj": {
-                "projectPath": "C:\\Users\\Egor\\source\\repos\\Arsys\\src\\Arsys.Server\\Arsys.DAL\\Arsys.DAL.csproj"
+              "C:\\Users\\Tema\\Desktop\\Workin\\MyProjects\\Arsys\\src\\Arsys.Server\\Arsys.DAL\\Arsys.DAL.csproj": {
+                "projectPath": "C:\\Users\\Tema\\Desktop\\Workin\\MyProjects\\Arsys\\src\\Arsys.Server\\Arsys.DAL\\Arsys.DAL.csproj"
               }
             }
           }
@@ -48,11 +48,19 @@
               "target": "Package",
               "version": "[6.0.9, )"
             },
+            "Microsoft.Extensions.PlatformAbstractions": {
+              "target": "Package",
+              "version": "[1.1.0, )"
+            },
             "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
               "version": "[6.0.7, )"
             },
-            "Swashbuckle.AspNetCore": {
+            "Swashbuckle.AspNetCore.SwaggerGen": {
+              "target": "Package",
+              "version": "[6.4.0, )"
+            },
+            "Swashbuckle.AspNetCore.SwaggerUI": {
               "target": "Package",
               "version": "[6.4.0, )"
             }
@@ -63,8 +71,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -76,21 +83,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Egor\\source\\repos\\Arsys\\src\\Arsys.Server\\Arsys.DAL\\Arsys.DAL.csproj": {
+    "C:\\Users\\Tema\\Desktop\\Workin\\MyProjects\\Arsys\\src\\Arsys.Server\\Arsys.DAL\\Arsys.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Egor\\source\\repos\\Arsys\\src\\Arsys.Server\\Arsys.DAL\\Arsys.DAL.csproj",
+        "projectUniqueName": "C:\\Users\\Tema\\Desktop\\Workin\\MyProjects\\Arsys\\src\\Arsys.Server\\Arsys.DAL\\Arsys.DAL.csproj",
         "projectName": "Arsys.DAL",
-        "projectPath": "C:\\Users\\Egor\\source\\repos\\Arsys\\src\\Arsys.Server\\Arsys.DAL\\Arsys.DAL.csproj",
-        "packagesPath": "C:\\Users\\Egor\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Egor\\source\\repos\\Arsys\\src\\Arsys.Server\\Arsys.DAL\\obj\\",
+        "projectPath": "C:\\Users\\Tema\\Desktop\\Workin\\MyProjects\\Arsys\\src\\Arsys.Server\\Arsys.DAL\\Arsys.DAL.csproj",
+        "packagesPath": "C:\\Users\\Tema\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Tema\\Desktop\\Workin\\MyProjects\\Arsys\\src\\Arsys.Server\\Arsys.DAL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Egor\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Tema\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -104,8 +111,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Egor\\source\\repos\\Arsys\\src\\Arsys.Server\\Arsys.Domain\\Arsys.Domain.csproj": {
-                "projectPath": "C:\\Users\\Egor\\source\\repos\\Arsys\\src\\Arsys.Server\\Arsys.Domain\\Arsys.Domain.csproj"
+              "C:\\Users\\Tema\\Desktop\\Workin\\MyProjects\\Arsys\\src\\Arsys.Server\\Arsys.Domain\\Arsys.Domain.csproj": {
+                "projectPath": "C:\\Users\\Tema\\Desktop\\Workin\\MyProjects\\Arsys\\src\\Arsys.Server\\Arsys.Domain\\Arsys.Domain.csproj"
               }
             }
           }
@@ -123,6 +130,18 @@
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[6.0.9, )"
+            },
+            "Microsoft.Extensions.PlatformAbstractions": {
+              "target": "Package",
+              "version": "[1.1.0, )"
+            },
+            "Swashbuckle.AspNetCore.SwaggerGen": {
+              "target": "Package",
+              "version": "[6.4.0, )"
+            },
+            "Swashbuckle.AspNetCore.SwaggerUI": {
+              "target": "Package",
+              "version": "[6.4.0, )"
             }
           },
           "imports": [
@@ -131,31 +150,33 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Egor\\source\\repos\\Arsys\\src\\Arsys.Server\\Arsys.Domain\\Arsys.Domain.csproj": {
+    "C:\\Users\\Tema\\Desktop\\Workin\\MyProjects\\Arsys\\src\\Arsys.Server\\Arsys.Domain\\Arsys.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Egor\\source\\repos\\Arsys\\src\\Arsys.Server\\Arsys.Domain\\Arsys.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Tema\\Desktop\\Workin\\MyProjects\\Arsys\\src\\Arsys.Server\\Arsys.Domain\\Arsys.Domain.csproj",
         "projectName": "Arsys.Domain",
-        "projectPath": "C:\\Users\\Egor\\source\\repos\\Arsys\\src\\Arsys.Server\\Arsys.Domain\\Arsys.Domain.csproj",
-        "packagesPath": "C:\\Users\\Egor\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Egor\\source\\repos\\Arsys\\src\\Arsys.Server\\Arsys.Domain\\obj\\",
+        "projectPath": "C:\\Users\\Tema\\Desktop\\Workin\\MyProjects\\Arsys\\src\\Arsys.Server\\Arsys.Domain\\Arsys.Domain.csproj",
+        "packagesPath": "C:\\Users\\Tema\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Tema\\Desktop\\Workin\\MyProjects\\Arsys\\src\\Arsys.Server\\Arsys.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Egor\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Tema\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -180,23 +201,39 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.Extensions.PlatformAbstractions": {
+              "target": "Package",
+              "version": "[1.1.0, )"
+            },
+            "Swashbuckle.AspNetCore.SwaggerGen": {
+              "target": "Package",
+              "version": "[6.4.0, )"
+            },
+            "Swashbuckle.AspNetCore.SwaggerUI": {
+              "target": "Package",
+              "version": "[6.4.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     }

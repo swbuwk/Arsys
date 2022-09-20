@@ -4,8 +4,10 @@ using Arsys.API.Services.CashDesk.Services.Services;
 using Arsys.DAL.Data;
 using Arsys.DAL.Data.Interfaces;
 using Arsys.DAL.Data.Repositories;
+using Microsoft.AspNetCore.Connections;
 using Microsoft.Extensions.PlatformAbstractions;
 using Microsoft.OpenApi.Models;
+using StackExchange.Redis;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -39,6 +41,8 @@ builder.Services.AddTransient<ICategoryService, CategoryService>();
 builder.Services.AddTransient<IOrderService, OrderService>();
 builder.Services.AddTransient<ICategoryRepository, CategoryRepository>();
 builder.Services.AddTransient<IProductRepository, ProductRepository>();
+builder.Services.AddSingleton<IConnectionMultiplexer>(x =>
+    ConnectionMultiplexer.Connect(builder.Configuration.GetConnectionString("RedisConnection")));
 
 var app = builder.Build();
 

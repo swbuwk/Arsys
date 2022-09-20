@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Tema\\Desktop\\Workin\\MyProjects\\Arsys\\src\\Arsys.Server\\Arsys.Domain\\Arsys.Domain.csproj": {}
+    "C:\\Users\\egebe\\Desktop\\Arsys\\src\\Arsys.Server\\Arsys.Domain\\Arsys.Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Tema\\Desktop\\Workin\\MyProjects\\Arsys\\src\\Arsys.Server\\Arsys.Domain\\Arsys.Domain.csproj": {
+    "C:\\Users\\egebe\\Desktop\\Arsys\\src\\Arsys.Server\\Arsys.Domain\\Arsys.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Tema\\Desktop\\Workin\\MyProjects\\Arsys\\src\\Arsys.Server\\Arsys.Domain\\Arsys.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\egebe\\Desktop\\Arsys\\src\\Arsys.Server\\Arsys.Domain\\Arsys.Domain.csproj",
         "projectName": "Arsys.Domain",
-        "projectPath": "C:\\Users\\Tema\\Desktop\\Workin\\MyProjects\\Arsys\\src\\Arsys.Server\\Arsys.Domain\\Arsys.Domain.csproj",
-        "packagesPath": "C:\\Users\\Tema\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Tema\\Desktop\\Workin\\MyProjects\\Arsys\\src\\Arsys.Server\\Arsys.Domain\\obj\\",
+        "projectPath": "C:\\Users\\egebe\\Desktop\\Arsys\\src\\Arsys.Server\\Arsys.Domain\\Arsys.Domain.csproj",
+        "packagesPath": "C:\\Users\\egebe\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\egebe\\Desktop\\Arsys\\src\\Arsys.Server\\Arsys.Domain\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Tema\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\egebe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -59,19 +63,17 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }

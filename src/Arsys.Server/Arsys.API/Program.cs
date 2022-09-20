@@ -14,9 +14,7 @@ builder.Services.AddSwaggerGen(c =>
     c.SwaggerDoc("v1", new OpenApiInfo
     {
         Version = "v1",
-        Title = "Blog System",
-        Description = "A simple example ASP.NET Core Web API",
-
+        Title = "Arsys API",          
     });
     var basePath = PlatformServices.Default.Application.ApplicationBasePath;
 
@@ -40,7 +38,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI(c =>
     {
-        c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
+        c.SwaggerEndpoint("/swagger/v1/swagger.json", "Arsys API v1");
     });
 
 }

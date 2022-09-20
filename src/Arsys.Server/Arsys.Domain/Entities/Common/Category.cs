@@ -2,9 +2,9 @@
 
 public class Category
 {
-    public Guid Id { get; protected set; }
+    public int Id { get; set; }
 
-    public string Name { get; protected set; }
+    public string Name { get; set; }
 
-    public List<Product> Products { get; protected set; }
+    public IEnumerable<Product> Products { get; set; }
 }

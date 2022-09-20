@@ -2,15 +2,15 @@
 
 public class Product
 {
-    public Guid Id { get; protected set; }
+    public int Id { get; set; }
 
-    public Guid CategoryId { get; protected set; }
+    public int CategoryId { get; set; }
 
-    public string Name { get; protected set; }
+    public string Name { get; set; }
 
-    public string Description { get; protected set; }
+    public string Description { get; set; }
 
-    public string ImageUrl { get; protected set; }
+    public string ImageUrl { get; set; }
 
-    public decimal Price { get; protected set; }
+    public decimal Price { get; set; }
 }

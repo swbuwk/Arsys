@@ -14,7 +14,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Data\Repositories\" />
     <Folder Include="Data\Extensions\" />
     <Folder Include="Logging\" />
   </ItemGroup>

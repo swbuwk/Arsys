@@ -34,6 +34,9 @@
             "projectReferences": {
               "C:\\Users\\egebe\\Desktop\\Arsys\\src\\Arsys.Server\\Arsys.DAL\\Arsys.DAL.csproj": {
                 "projectPath": "C:\\Users\\egebe\\Desktop\\Arsys\\src\\Arsys.Server\\Arsys.DAL\\Arsys.DAL.csproj"
+              },
+              "C:\\Users\\egebe\\Desktop\\Arsys\\src\\Arsys.Server\\Arsys.Domain\\Arsys.Domain.csproj": {
+                "projectPath": "C:\\Users\\egebe\\Desktop\\Arsys\\src\\Arsys.Server\\Arsys.Domain\\Arsys.Domain.csproj"
               }
             }
           }
@@ -48,11 +51,19 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
-            "Microsoft.EntityFrameworkCore": {
+            "AutoMapper": {
               "target": "Package",
-              "version": "[6.0.9, )"
+              "version": "[11.0.1, )"
             },
-            "Microsoft.EntityFrameworkCore.SqlServer": {
+            "MediatR": {
+              "target": "Package",
+              "version": "[10.0.1, )"
+            },
+            "MediatR.Contracts": {
+              "target": "Package",
+              "version": "[1.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[6.0.9, )"
             },
@@ -61,10 +72,6 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[6.0.9, )"
-            },
-            "Microsoft.Extensions.PlatformAbstractions": {
-              "target": "Package",
-              "version": "[1.1.0, )"
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",

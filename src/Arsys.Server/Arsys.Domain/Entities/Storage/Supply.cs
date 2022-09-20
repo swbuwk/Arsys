@@ -4,8 +4,12 @@ namespace Arsys.Domain.Entities.Storage
 {
     public class Supply
     {
-        public int Id { get; set; }
+        public Guid Id { get; set; }
+        public Guid EmployeeId { get; set; }
         public DateTime SupplyDate { get; set; }
+        public bool IsComplete { get; set; }
+        
         public IEnumerable<Product> Products { get; set; }
+        public Employee ResponsibleEmployee { get; set; }
     }
 }

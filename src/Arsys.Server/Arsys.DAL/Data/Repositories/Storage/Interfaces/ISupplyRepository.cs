@@ -4,11 +4,13 @@ namespace Arsys.DAL.Data.Repositories.Storage.Interfaces
 {
     public interface ISupplyRepository
     {
+        IQueryable<Supply> Supplies { get; }
+
         Task<IEnumerable<Supply>> GetAllSuppliesAsync();
-        Task<Supply> GetSupplyByIdAsync(int id);
+        Task<Supply> GetSupplyByIdAsync(Guid id, Guid employeeId, CancellationToken cancellationToken);
         
-        Task RegisterSupplyAsync(Supply supply);
-        Task DeleteSupplyAsync(int id);
-        Task UpdateSupplyAsync(Supply supply);
+        Task RegisterSupplyAsync(Supply supply, CancellationToken cancellationToken);
+        Task DeleteSupplyAsync(Guid id, Guid employeeId, CancellationToken cancellationToken);
+        Task UpdateSupplyAsync(Guid id, Guid employeeId, CancellationToken cancellationToken);
     }
 }

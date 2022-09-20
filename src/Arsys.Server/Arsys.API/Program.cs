@@ -1,4 +1,6 @@
 using Arsys.DAL.Data;
+using Arsys.DAL.Data.Repositories.Storage;
+using Arsys.DAL.Data.Repositories.Storage.Interfaces;
 using Microsoft.Extensions.PlatformAbstractions;
 using Microsoft.OpenApi.Models;
 
@@ -26,6 +28,7 @@ builder.Services.AddCors();
 //DI
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("DbConnection")));
+builder.Services.AddTransient<ISupplyRepository, SupplyRepository>();
 
 
 AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", true);

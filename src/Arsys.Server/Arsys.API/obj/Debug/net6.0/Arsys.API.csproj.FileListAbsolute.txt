@@ -36,3 +36,4 @@ C:\Users\Tema\Desktop\Workin\MyProjects\Arsys\src\Arsys.Server\Arsys.API\obj\Deb
 C:\Users\Tema\Desktop\Workin\MyProjects\Arsys\src\Arsys.Server\Arsys.API\obj\Debug\net6.0\Arsys.API.genruntimeconfig.cache
 C:\Users\Tema\Desktop\Workin\MyProjects\Arsys\src\Arsys.Server\Arsys.API\obj\Debug\net6.0\ref\Arsys.API.dll
 C:\Users\Tema\Desktop\Workin\MyProjects\Arsys\src\Arsys.Server\Arsys.API\bin\Debug\net6.0\Microsoft.Extensions.PlatformAbstractions.dll
+C:\Users\Tema\Desktop\Workin\MyProjects\Arsys\src\Arsys.Server\Arsys.API\bin\Debug\net6.0\Newtonsoft.Json.dll

@@ -52,6 +52,10 @@
               "target": "Package",
               "version": "[1.1.0, )"
             },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.2-beta2, )"
+            },
             "Swashbuckle.AspNetCore.SwaggerGen": {
               "target": "Package",
               "version": "[6.4.0, )"
@@ -122,6 +126,10 @@
             "Microsoft.Extensions.PlatformAbstractions": {
               "target": "Package",
               "version": "[1.1.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.2-beta2, )"
             },
             "Swashbuckle.AspNetCore.SwaggerGen": {
               "target": "Package",

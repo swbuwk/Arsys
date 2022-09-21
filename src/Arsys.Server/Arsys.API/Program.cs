@@ -1,6 +1,8 @@
 using System.Text.Json.Serialization;
 using Arsys.API.Services.CashDesk.Services.Interfaces;
 using Arsys.API.Services.CashDesk.Services.Services;
+using Arsys.API.Services.RedisCacheControl.Service.Interfaces;
+using Arsys.API.Services.RedisCacheControl.Service.Services;
 using Arsys.DAL.Data;
 using Arsys.DAL.Data.Interfaces;
 using Arsys.DAL.Data.Repositories;
@@ -41,8 +43,10 @@ builder.Services.AddTransient<ICategoryService, CategoryService>();
 builder.Services.AddTransient<IOrderService, OrderService>();
 builder.Services.AddTransient<ICategoryRepository, CategoryRepository>();
 builder.Services.AddTransient<IProductRepository, ProductRepository>();
+builder.Services.AddTransient<IRedisCacheControlService, RedisCacheControlService>();
 builder.Services.AddSingleton<IConnectionMultiplexer>(x =>
     ConnectionMultiplexer.Connect(builder.Configuration.GetConnectionString("RedisConnection")));
+
 
 var app = builder.Build();
 

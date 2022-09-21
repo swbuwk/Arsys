@@ -29,9 +29,4 @@ public class CategoryService : ICategoryService
         var model = new ProductListViewModel {Products = products};
         return model;
     }
-    public async  Task SetValue(string key, string value)
-    {
-        var db = _multiplexer.GetDatabase();
-        await db.StringSetAsync(key, value);
-    }
 }

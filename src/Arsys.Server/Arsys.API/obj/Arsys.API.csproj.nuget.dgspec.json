@@ -55,6 +55,10 @@
               "target": "Package",
               "version": "[11.0.1, )"
             },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[11.0.0, )"
+            },
             "MediatR": {
               "target": "Package",
               "version": "[10.0.1, )"
@@ -62,6 +66,10 @@
             "MediatR.Contracts": {
               "target": "Package",
               "version": "[1.0.1, )"
+            },
+            "MediatR.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[10.0.1, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
@@ -73,13 +81,9 @@
               "target": "Package",
               "version": "[6.0.9, )"
             },
-            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+            "Microsoft.Extensions.PlatformAbstractions": {
               "target": "Package",
-              "version": "[6.0.9, )"
-            },
-            "Npgsql.EntityFrameworkCore.PostgreSQL": {
-              "target": "Package",
-              "version": "[6.0.7, )"
+              "version": "[1.1.0, )"
             },
             "Swashbuckle.AspNetCore.SwaggerGen": {
               "target": "Package",
@@ -161,9 +165,9 @@
               "target": "Package",
               "version": "[6.0.9, )"
             },
-            "Microsoft.Extensions.PlatformAbstractions": {
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
-              "version": "[1.1.0, )"
+              "version": "[6.0.7, )"
             },
             "Swashbuckle.AspNetCore.SwaggerGen": {
               "target": "Package",
@@ -233,20 +237,6 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "dependencies": {
-            "Microsoft.Extensions.PlatformAbstractions": {
-              "target": "Package",
-              "version": "[1.1.0, )"
-            },
-            "Swashbuckle.AspNetCore.SwaggerGen": {
-              "target": "Package",
-              "version": "[6.4.0, )"
-            },
-            "Swashbuckle.AspNetCore.SwaggerUI": {
-              "target": "Package",
-              "version": "[6.4.0, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",

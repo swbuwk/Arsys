@@ -1,8 +1,7 @@
-﻿using Arsys.DAL.Data;
-using Arsys.DAL.Data.Repositories.Storage.Interfaces;
+﻿using Arsys.DAL.Data.Repositories.Storage.Interfaces;
 using Arsys.Domain.Entities.Storage;
 
-namespace Arsys.API.Application.Supplies.Commands.RegisterSupply
+namespace Arsys.API.Application.MediatR.Supplies.Commands.RegisterSupply
 {
     public class RegisterSupplyCommandHandler : IRequestHandler<RegisterSupplyCommand, Guid>
     {        
@@ -18,7 +17,7 @@ namespace Arsys.API.Application.Supplies.Commands.RegisterSupply
             var supply = new Supply()
             {
                 Id = Guid.NewGuid(),
-                EmployeeId = request.EmployeeId,
+                //EmployeeId = request.EmployeeId,
                 SupplyDate = request.SupplyDate,
                 IsComplete = false,   
                 Products = request.Products

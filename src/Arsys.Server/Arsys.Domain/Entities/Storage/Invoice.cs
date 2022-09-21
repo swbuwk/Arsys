@@ -4,9 +4,9 @@ namespace Arsys.Domain.Entities.Storage
 {
     public class Invoice
     {
-        public int Id { get; set; }
+        public Guid Id { get; set; }
         
-        public int EmployeeId { get; set; }
+        public Guid EmployeeId { get; set; }
         
         public short Number { get; set; }
         

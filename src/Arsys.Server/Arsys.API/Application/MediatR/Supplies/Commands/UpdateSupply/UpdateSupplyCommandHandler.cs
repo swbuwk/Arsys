@@ -1,6 +1,6 @@
 ﻿using Arsys.DAL.Data.Repositories.Storage.Interfaces;
 
-namespace Arsys.API.Application.Supplies.Commands.UpdateSupply
+namespace Arsys.API.Application.MediatR.Supplies.Commands.UpdateSupply
 {
     public class UpdateSupplyCommandHandler : IRequestHandler<UpdateSupplyCommand>
     {
@@ -13,7 +13,7 @@ namespace Arsys.API.Application.Supplies.Commands.UpdateSupply
         public async Task<Unit> Handle(UpdateSupplyCommand request, 
             CancellationToken cancellationToken)
         {
-            await _supplyRepository.UpdateSupplyAsync(request.Id, request.EmployeeId, cancellationToken);            
+            await _supplyRepository.UpdateSupplyAsync(request.Id, cancellationToken);            
             return Unit.Value;
         }
     }

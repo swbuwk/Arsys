@@ -2,7 +2,7 @@
 using Arsys.DAL.Data.Repositories.Storage.Interfaces;
 using AutoMapper.QueryableExtensions;
 
-namespace Arsys.API.Application.Supplies.Queries.GetListSupply
+namespace Arsys.API.Application.MediatR.Supplies.Queries.GetListSupply
 {
     public class GetSupplyListQueryHandler
         : IRequestHandler<GetSupplyListQuery, SupplyListDto>
@@ -18,8 +18,7 @@ namespace Arsys.API.Application.Supplies.Queries.GetListSupply
 
         public async Task<SupplyListDto> Handle(GetSupplyListQuery request, CancellationToken cancellationToken)
         {
-            var suppliesQuery = await _supplyRepository.Supplies
-                                                       .Where(supply => supply.EmployeeId == request.EmployeeId)
+            var suppliesQuery = await _supplyRepository.Supplies                                                       
                                                        .ProjectTo<SupplyLookupDto>(_mapper.ConfigurationProvider)
                                                        .ToListAsync(cancellationToken);
             

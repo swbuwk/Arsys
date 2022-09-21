@@ -20,10 +20,10 @@ namespace Arsys.DAL.Data.Repositories.Storage
             await _db.Supplies.Include(s => s.Products).ToListAsync();
         
 
-        public async Task<Supply> GetSupplyByIdAsync(Guid id, Guid employeeId, CancellationToken cancellationToken)
+        public async Task<Supply> GetSupplyByIdAsync(Guid id, CancellationToken cancellationToken)
         {
             var supply = await _db.Supplies.FindAsync(new object[] { id }, cancellationToken);
-            if (supply is null || employeeId != supply.EmployeeId)
+            if (supply is null) //employeeId != supply.EmployeeId
                 throw new NotFoundException(nameof(Supply), id);
             return supply;
         }
@@ -35,19 +35,19 @@ namespace Arsys.DAL.Data.Repositories.Storage
             await _db.SaveChangesAsync(cancellationToken);
         }
         
-        public async Task DeleteSupplyAsync(Guid id, Guid employeeId, CancellationToken cancellationToken)
+        public async Task DeleteSupplyAsync(Guid id, CancellationToken cancellationToken)
         {
             var supply = await _db.Supplies.FindAsync(new object[] { id });                        
-            if (supply is null || employeeId != supply.EmployeeId)
+            if (supply is null)
                 throw new NotFoundException(nameof(Supply), id);            
             _db.Supplies.Remove(supply);
             await _db.SaveChangesAsync(cancellationToken);
         }
 
-        public async Task UpdateSupplyAsync(Guid id, Guid employeeId, CancellationToken cancellationToken)
+        public async Task UpdateSupplyAsync(Guid id, CancellationToken cancellationToken)
         {
             var supply = await _db.Supplies.FindAsync(new object[] { id });
-            if (supply is null || employeeId != supply.EmployeeId)
+            if (supply is null)
                 throw new NotFoundException(nameof(Supply), id);            
             _db.Supplies.Update(supply);
             await _db.SaveChangesAsync(cancellationToken);

@@ -1,14 +1,16 @@
+using Arsys.API.Application.Common.Mappings;
 using Arsys.DAL.Data;
 using Arsys.DAL.Data.Repositories.Storage;
 using Arsys.DAL.Data.Repositories.Storage.Interfaces;
-using Microsoft.Extensions.PlatformAbstractions;
-using Microsoft.OpenApi.Models;
-
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+//Add MediatR and Automapper
+builder.Services.AddMediatR(Assembly.GetExecutingAssembly());
+builder.Services.AddAutoMapper(config =>
+    config.AddProfile(new AssemblyMappingProfile(Assembly.GetExecutingAssembly())));
 
+// Add services to the container.
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
@@ -28,10 +30,10 @@ builder.Services.AddCors();
 //DI
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("DbConnection")));
+AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", true);
+
 builder.Services.AddTransient<ISupplyRepository, SupplyRepository>();
 
-
-AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", true);
 
 var app = builder.Build();
 

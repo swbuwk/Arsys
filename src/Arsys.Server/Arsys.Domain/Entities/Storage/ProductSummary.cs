@@ -4,8 +4,8 @@ namespace Arsys.Domain.Entities.Storage
 {
     public class ProductSummary
     {
-        public int Id { get; set; }        
-        public int ProductId { get; set; }        
+        public Guid Id { get; set; }        
+        public Guid ProductId { get; set; }        
         
         public short Amount { get; set; }
         

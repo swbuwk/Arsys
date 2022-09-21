@@ -1,7 +1,7 @@
 ﻿using Arsys.API.DTOs.Storage;
 using Arsys.DAL.Data.Repositories.Storage.Interfaces;
 
-namespace Arsys.API.Application.Supplies.Queries.GetSupply
+namespace Arsys.API.Application.MediatR.Supplies.Queries.GetSupply
 {
     public class GetSupplyQueryHandler : IRequestHandler<GetSupplyQuery, SupplyDto>
     {
@@ -16,7 +16,7 @@ namespace Arsys.API.Application.Supplies.Queries.GetSupply
         public async Task<SupplyDto> Handle(GetSupplyQuery request,
             CancellationToken cancellationToken)
         {
-            var supply = await _supplyRepository.GetSupplyByIdAsync(request.Id, request.EmployeeId, cancellationToken);
+            var supply = await _supplyRepository.GetSupplyByIdAsync(request.Id, cancellationToken);
             return _mapper.Map<SupplyDto>(supply);
         }
     }

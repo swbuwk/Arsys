@@ -1,5 +1,6 @@
 ﻿using Arsys.Domain.Entities.Common;
-using Microsoft.EntityFrameworkCore;
+using StackExchange.Redis;
+using Order = Arsys.Domain.Entities.CashDesk.Order;
 
 namespace Arsys.DAL.Data
 {
@@ -10,12 +11,14 @@ namespace Arsys.DAL.Data
 
         public DbSet<Product> Products { get; set; }
         public DbSet<Category> Categories { get; set; }
+        
+        public DbSet<Order> Orders { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             //инициализация бд начальными значениями
 
-                var desserts = new Category {Id = Guid.NewGuid(), Name = "Desserts"};
+            var desserts = new Category {Id = Guid.NewGuid(), Name = "Desserts"};
             var beverages = new Category {Id = Guid.NewGuid(), Name = "Beverages"};
             var chicken = new Category {Id = Guid.NewGuid(), Name = "Chicken"};
             var beef = new Category {Id = Guid.NewGuid(), Name = "Beef"};

@@ -1,8 +1,7 @@
-﻿using Arsys.DAL.Data.Interfaces;
+﻿using Arsys.DAL.Data.Repositories.Сommon.Interfaces;
 using Arsys.Domain.Entities.Common;
-using Microsoft.EntityFrameworkCore;
 
-namespace Arsys.DAL.Data.Repositories;
+namespace Arsys.DAL.Data.Repositories.Сommon.Repositories;
 
 public class ProductRepository : IProductRepository
 {
@@ -17,7 +16,7 @@ public class ProductRepository : IProductRepository
         await _appDbContext.AddAsync(product);
         await SaveAsync();
     }
-    public async Task<List<Product>> GetProductsByCategory(Guid categoryId) =>
+    public async Task<List<Product>> GetProductsByCategoryIdAsync(Guid categoryId) =>
         await _appDbContext.Products.Where(p => p.CategoryId.Equals(categoryId))
         .ToListAsync();
 

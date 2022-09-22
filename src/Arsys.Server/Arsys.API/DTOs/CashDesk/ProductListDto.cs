@@ -1,8 +1,8 @@
 ﻿using Arsys.Domain.Entities.Common;
 
-namespace Arsys.API.DTOs;
+namespace Arsys.API.DTOs.CashDesk;
 
-public class ProductListViewModel
+public class ProductListDto
 {
     public List<Product> Products { get; set; }
 }

@@ -1,25 +1,26 @@
 ﻿using Arsys.API.Services.CashDesk.Services.Interfaces;
-using Arsys.API.Services.RedisCacheControl.Service.Interfaces;
-using Arsys.DAL.Data.Interfaces;
+using Arsys.DAL.Data.Repositories.CashDesk.Interfaces;
 using Arsys.Domain.Entities.Common;
-using StackExchange.Redis;
 
 namespace Arsys.API.Controllers.CashDesk.Controllers;
 
 [ApiController]
-[Route("[controller]")]
+[Route("api/[controller]")]
 public class CategoryController : ControllerBase
 {
-    private readonly ICategoryService _categoryService;
-    private readonly IRedisCacheControlService _cache;
-    public CategoryController(ICategoryService categoryService, IRedisCacheControlService cache)
+    private readonly IShopCartRepository _shopCartRepository;
+    public CategoryController( IShopCartRepository shopCartRepository)
     {
-        _categoryService = categoryService;
-        _cache = cache;
+        _shopCartRepository = shopCartRepository;
+    }
+    
+
+    [HttpPost]
+    public async Task<IActionResult> Redis(Product product, int qu)
+    {
+        await _shopCartRepository.AddItem(product, qu);
+        return Ok();
     }
 
-    [HttpGet("GetProducts")]
-    public async Task<IActionResult> GetProducts(string category) => 
-        Ok(await _categoryService.GetProducts(category));
-    
+
 }

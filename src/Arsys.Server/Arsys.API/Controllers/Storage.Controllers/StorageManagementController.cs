@@ -4,7 +4,7 @@
     [ApiController]
     public class StorageManagementController : ControllerBase
     {
-        // GET: api/<ProductsManagermentController>
+       /* // GET: api/<ProductsManagermentController>
         [HttpGet]
         public IEnumerable<string> Get()
         {
@@ -34,6 +34,6 @@
         [HttpDelete("{id}")]
         public void Delete(int id)
         {
-        }
+        }*/
     }
 }

@@ -1,4 +1,4 @@
-﻿using Arsys.API.DTOs.Storage;
+﻿using Arsys.API.DTOs.Storage.SuppliesDto;
 using Arsys.DAL.Data.Repositories.Storage.Interfaces;
 
 namespace Arsys.API.Application.MediatR.Supplies.Queries.GetSupply

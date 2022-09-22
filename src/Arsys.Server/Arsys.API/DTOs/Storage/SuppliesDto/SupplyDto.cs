@@ -2,7 +2,7 @@
 using Arsys.Domain.Entities.Common;
 using Arsys.Domain.Entities.Storage;
 
-namespace Arsys.API.DTOs.Storage
+namespace Arsys.API.DTOs.Storage.SuppliesDto
 {
     public class SupplyDto : IMapWith<Supply>
     {
@@ -21,7 +21,7 @@ namespace Arsys.API.DTOs.Storage
                 .ForMember(dto => dto.IsComplete,
                 opt => opt.MapFrom(supply => supply.IsComplete))
                 .ForMember(dto => dto.Products,
-                opt => opt.MapFrom(supply => supply.Products));               
+                opt => opt.MapFrom(supply => supply.Products));
         }
     }
 }

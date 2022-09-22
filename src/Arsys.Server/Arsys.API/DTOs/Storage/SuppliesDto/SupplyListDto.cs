@@ -1,4 +1,4 @@
-﻿namespace Arsys.API.DTOs.Storage
+﻿namespace Arsys.API.DTOs.Storage.SuppliesDto
 {
     public class SupplyListDto
     {

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "iBJx3MtF/wRfz1K0kZ6zG7JZgLFEyrh4TpRYowAJygaNQQcQ/yhpGzF6rSihctOgn7De4unbkPVqu4qbvJ9/Cw==",
+  "dgSpecHash": "89NtmV6DEK4xvyI5UKq8G7S+FlgTq85BeB4rdsZm8iuanU703YmOTCblCwVbItolJ3NsZ49/X4S7V8ZTK2PXWw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\egebe\\Desktop\\Arsys\\src\\Arsys.Server\\Arsys.Domain\\Arsys.Domain.csproj",
+  "projectFilePath": "C:\\Users\\Egor\\source\\repos\\Arsys\\src\\Arsys.Server\\Arsys.Domain\\Arsys.Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

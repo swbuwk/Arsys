@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\egebe\\Desktop\\Arsys\\src\\Arsys.Server\\Arsys.Domain\\Arsys.Domain.csproj": {}
+    "C:\\Users\\Egor\\source\\repos\\Arsys\\src\\Arsys.Server\\Arsys.Domain\\Arsys.Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\egebe\\Desktop\\Arsys\\src\\Arsys.Server\\Arsys.Domain\\Arsys.Domain.csproj": {
+    "C:\\Users\\Egor\\source\\repos\\Arsys\\src\\Arsys.Server\\Arsys.Domain\\Arsys.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\egebe\\Desktop\\Arsys\\src\\Arsys.Server\\Arsys.Domain\\Arsys.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Egor\\source\\repos\\Arsys\\src\\Arsys.Server\\Arsys.Domain\\Arsys.Domain.csproj",
         "projectName": "Arsys.Domain",
-        "projectPath": "C:\\Users\\egebe\\Desktop\\Arsys\\src\\Arsys.Server\\Arsys.Domain\\Arsys.Domain.csproj",
-        "packagesPath": "C:\\Users\\egebe\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\egebe\\Desktop\\Arsys\\src\\Arsys.Server\\Arsys.Domain\\obj\\",
+        "projectPath": "C:\\Users\\Egor\\source\\repos\\Arsys\\src\\Arsys.Server\\Arsys.Domain\\Arsys.Domain.csproj",
+        "packagesPath": "C:\\Users\\Egor\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Egor\\source\\repos\\Arsys\\src\\Arsys.Server\\Arsys.Domain\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\egebe\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Egor\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

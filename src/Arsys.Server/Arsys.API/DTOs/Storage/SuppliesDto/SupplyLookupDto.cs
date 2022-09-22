@@ -1,13 +1,13 @@
 ﻿using Arsys.API.Application.Common.Mappings;
 using Arsys.Domain.Entities.Storage;
 
-namespace Arsys.API.DTOs.Storage
+namespace Arsys.API.DTOs.Storage.SuppliesDto
 {
     public class SupplyLookupDto : IMapWith<Supply>
     {
         public Guid Id { get; set; }
         public DateTime SupplyDate { get; set; }
-        public bool IsComplete { get; set; }        
+        public bool IsComplete { get; set; }
 
         public void Mapping(Profile profile)
         {
@@ -17,7 +17,7 @@ namespace Arsys.API.DTOs.Storage
                 .ForMember(dto => dto.SupplyDate,
                 opt => opt.MapFrom(supply => supply.SupplyDate))
                 .ForMember(dto => dto.IsComplete,
-                opt => opt.MapFrom(supply => supply.IsComplete));                
+                opt => opt.MapFrom(supply => supply.IsComplete));
         }
     }
 }

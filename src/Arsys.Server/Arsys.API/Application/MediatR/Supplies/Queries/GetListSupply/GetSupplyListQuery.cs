@@ -1,4 +1,4 @@
-﻿using Arsys.API.DTOs.Storage;
+﻿using Arsys.API.DTOs.Storage.SuppliesDto;
 
 namespace Arsys.API.Application.MediatR.Supplies.Queries.GetListSupply
 {

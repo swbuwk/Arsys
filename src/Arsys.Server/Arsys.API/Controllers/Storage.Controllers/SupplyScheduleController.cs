@@ -1,6 +1,6 @@
 ﻿using Arsys.API.Application.MediatR.Supplies.Commands.RegisterSupply;
 using Arsys.API.Application.MediatR.Supplies.Queries.GetSupply;
-using Arsys.API.DTOs.Storage;
+using Arsys.API.DTOs.Storage.SuppliesDto;
 
 namespace Arsys.API.Controllers.Storage.Controllers
 {
@@ -29,11 +29,11 @@ namespace Arsys.API.Controllers.Storage.Controllers
         }
 
         [HttpPost]        
-        public async Task<ActionResult<Guid>> Register(SupplyDto supplyDto)
+        public async Task<ActionResult<Guid>> Register([FromBody] RegisterSupplyDto regSupplyDto)
         {
-            var command = _mapper.Map<RegisterSupplyCommand>(supplyDto);            
-            var noteId = await _mediator.Send(command);
-            return Ok(noteId);
+            var command = _mapper.Map<RegisterSupplyCommand>(regSupplyDto);            
+            var supplyId = await _mediator.Send(command);
+            return Ok(supplyId);
         }
     }
 }

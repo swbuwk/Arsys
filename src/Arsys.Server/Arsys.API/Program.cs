@@ -1,21 +1,26 @@
+using Arsys.API.Services.CashDesk.Services.Interfaces;
+using Arsys.API.Services.CashDesk.Services.Services;
 using Arsys.DAL.Data;
+using Arsys.DAL.Data.Repositories.CashDesk.Interfaces;
+using Arsys.DAL.Data.Repositories.CashDesk.Repositories;
+using Arsys.DAL.Data.Repositories.Сommon.Interfaces;
+using Arsys.DAL.Data.Repositories.Сommon.Repositories;
 using Microsoft.Extensions.PlatformAbstractions;
 using Microsoft.OpenApi.Models;
+using StackExchange.Redis;
 
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-
 builder.Services.AddControllers();
-builder.Services.AddEndpointsApiExplorer();
+    builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
 {
     c.SwaggerDoc("v1", new OpenApiInfo
     {
         Version = "v1",
-        Title = "Blog System",
-        Description = "A simple example ASP.NET Core Web API",
+        Title = "Arsys API",
 
     });
     var basePath = PlatformServices.Default.Application.ApplicationBasePath;
@@ -32,17 +37,26 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 
 AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", true);
 
+builder.Services.AddTransient<IOrderService, OrderService>();
+builder.Services.AddTransient<ICategoryRepository, CategoryRepository>();
+builder.Services.AddTransient<IProductRepository, ProductRepository>();
+builder.Services.AddTransient<IShopCartRepository, ShopCartRepository>();
+builder.Services.AddTransient<IOrderRepository, OrderRepository>();
+builder.Services.AddSingleton<IConnectionMultiplexer>(x =>
+    ConnectionMultiplexer.Connect(builder.Configuration.GetConnectionString("RedisConnection")));
+
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
-    app.UseSwagger();
-    app.UseSwaggerUI(c =>
-    {
-        c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
-    });
-
+    using var scope = app.Services.CreateScope();
+    var db = scope.ServiceProvider.GetRequiredService<AppDbContext>();
+    db.Database.EnsureCreated();
+    app.UseSwagger();   
+    app.UseSwaggerUI(c => 
+        { c.SwaggerEndpoint("/swagger/v1/swagger.json", "Arsys API v.1"); });
 }
 
 app.UseHttpsRedirection();

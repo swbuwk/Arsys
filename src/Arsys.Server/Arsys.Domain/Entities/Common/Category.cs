@@ -1,10 +1,15 @@
-﻿namespace Arsys.Domain.Entities.Common;
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace Arsys.Domain.Entities.Common;
 
 public class Category
 {
-    public Guid Id { get; protected set; }
+    [Key]
+    public Guid Id { get; set; }
 
-    public string Name { get; protected set; }
+    public string Name { get; set; }
+    
+    public string ImageUrl { get; set; }
 
-    public List<Product> Products { get; protected set; }
+    public List<Product> Products { get; set; }
 }

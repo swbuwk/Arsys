@@ -16,14 +16,5 @@ public class CategoryRepository : ICategoryRepository
         await _appDbContext.Categories.FirstOrDefaultAsync(c => c.Name.Equals(name));
 
     public async Task<Category> GetCategoryByIdAsync(Guid categoryId)
-        => await _appDbContext.Categories.FindAsync(new object[] {categoryId});
-    
-    public async Task<List<Product>> GetProductsByCategoryIdAsync(Guid categoryId)
-    {
-        Category currentCategory = await GetCategoryByIdAsync(categoryId);
-        List<Product> products = await _productRepository
-            .GetProductsByCategoryIdAsync(currentCategory.Id); ;
-
-        return products;
-    }
+        => await _appDbContext.Categories.FindAsync(new object[] {categoryId});       
 }

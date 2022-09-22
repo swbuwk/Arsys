@@ -1,4 +1,5 @@
 ﻿using Arsys.Domain.Entities.Common;
+using Arsys.Domain.Entities.Storage;
 using StackExchange.Redis;
 using Order = Arsys.Domain.Entities.CashDesk.Order;
 
@@ -11,6 +12,7 @@ namespace Arsys.DAL.Data
 
         public DbSet<Product> Products { get; set; }
         public DbSet<Category> Categories { get; set; }
+        public DbSet<Supply> Supplies { get; set; }
         
         public DbSet<Order> Orders { get; set; }
 

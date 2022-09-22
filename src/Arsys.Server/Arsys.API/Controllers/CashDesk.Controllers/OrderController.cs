@@ -7,7 +7,7 @@ namespace Arsys.API.Controllers.CashDesk.Controllers;
 [Route("api/[controller]")]
 public class OrderController : ControllerBase
 {
-    private readonly IShopCartRepository _shopCartRepository;
+    /*private readonly IShopCartRepository _shopCartRepository;
     private readonly IOrderRepository _orderRepository;
     public OrderController(IShopCartRepository shopCartRepository, IOrderRepository orderRepository)
     {
@@ -22,5 +22,5 @@ public class OrderController : ControllerBase
         order.Items = cart.ShopCartItems;
         await _orderRepository.CreateOrderAsync(order);
         return Ok();
-    }
+    }*/
 }

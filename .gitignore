@@ -1,3 +1,8 @@
 ﻿src/Arsys.Server/Arsys.API/bin
 src/Arsys.Server/Arsys.DAL/bin
 src/Arsys.Server/Arsys.Domain/bin
+src/Arsys.Server/.vs
+src/Arsys.Server/Arsys.API/bin
+src/Arsys.Server/Arsys.Domain/obj
+src/Arsys.Server/Arsys.DAL/obj
+src/Arsys.Server/Arsys.API/obj

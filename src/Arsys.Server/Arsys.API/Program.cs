@@ -1,16 +1,22 @@
+using Arsys.API.Application.Common.Mappings;
 using Arsys.API.Services.CashDesk.Services.Interfaces;
 using Arsys.API.Services.CashDesk.Services.Services;
 using Arsys.DAL.Data;
 using Arsys.DAL.Data.Repositories.CashDesk.Interfaces;
 using Arsys.DAL.Data.Repositories.CashDesk.Repositories;
+using Arsys.DAL.Data.Repositories.Storage;
+using Arsys.DAL.Data.Repositories.Storage.Interfaces;
 using Arsys.DAL.Data.Repositories.Сommon.Interfaces;
 using Arsys.DAL.Data.Repositories.Сommon.Repositories;
-using Microsoft.Extensions.PlatformAbstractions;
-using Microsoft.OpenApi.Models;
 using StackExchange.Redis;
 
 
 var builder = WebApplication.CreateBuilder(args);
+
+//Add MediatR and Automapper
+builder.Services.AddMediatR(Assembly.GetExecutingAssembly());
+builder.Services.AddAutoMapper(config =>
+    config.AddProfile(new AssemblyMappingProfile(Assembly.GetExecutingAssembly())));
 
 // Add services to the container.
 builder.Services.AddControllers();
@@ -37,11 +43,12 @@ AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", true);
 
 builder.Services.AddTransient<IOrderService, OrderService>();
 builder.Services.AddTransient<ICategoryRepository, CategoryRepository>();
+builder.Services.AddTransient<ISupplyRepository, SupplyRepository>();
 builder.Services.AddTransient<IProductRepository, ProductRepository>();
-builder.Services.AddTransient<IShopCartRepository, ShopCartRepository>();
+//builder.Services.AddTransient<IShopCartRepository, ShopCartRepository>();
 builder.Services.AddTransient<IOrderRepository, OrderRepository>();
-builder.Services.AddSingleton<IConnectionMultiplexer>(x =>
-    ConnectionMultiplexer.Connect(builder.Configuration.GetConnectionString("RedisConnection")));
+//builder.Services.AddSingleton<IConnectionMultiplexer>(x =>
+    //ConnectionMultiplexer.Connect(builder.Configuration.GetConnectionString("RedisConnection")));
 
 
 var app = builder.Build();

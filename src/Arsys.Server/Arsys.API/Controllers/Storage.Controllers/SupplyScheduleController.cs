@@ -17,21 +17,21 @@ namespace Arsys.API.Controllers.Storage.Controllers
             _mediator = mediator;
         }
 
-        [HttpGet("{id}")]                       
+        [HttpGet("{id}")]
         public async Task<ActionResult<SupplyDto>> Get(Guid id)
         {
             var query = new GetSupplyQuery
-            {                
+            {
                 Id = id
             };
             var dto = await _mediator.Send(query);
             return Ok(dto);
         }
 
-        [HttpPost]        
+        [HttpPost]
         public async Task<ActionResult<Guid>> Register([FromBody] RegisterSupplyDto regSupplyDto)
         {
-            var command = _mapper.Map<RegisterSupplyCommand>(regSupplyDto);            
+            var command = _mapper.Map<RegisterSupplyCommand>(regSupplyDto);
             var supplyId = await _mediator.Send(command);
             return Ok(supplyId);
         }

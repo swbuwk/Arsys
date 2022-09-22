@@ -11,14 +11,17 @@ public class ProductRepository : IProductRepository
         _appDbContext = context;
     }
 
+    public IQueryable<Product> Products => _appDbContext.Products;
+    
     public async Task CreateProduct(Product product)
     {
         await _appDbContext.AddAsync(product);
         await SaveAsync();
     }
+    
     public async Task<List<Product>> GetProductsByCategoryIdAsync(Guid categoryId) =>
-        await _appDbContext.Products.Where(p => p.CategoryId.Equals(categoryId))
-        .ToListAsync();
+        await Products.Where(p => p.CategoryId.Equals(categoryId))
+                      .ToListAsync();
 
     private async Task SaveAsync() => await _appDbContext.SaveChangesAsync();     
 }

@@ -3,10 +3,11 @@
 namespace Arsys.DAL.Data.Repositories.Сommon.Interfaces;
 
 public interface IProductRepository
-{
-    IQueryable<Product> Products { get; }
+{       
+    IQueryable<Product> GetProductsByCategoryIdAsync(Guid categoryId);
+    Task<Product> GetProductByIdAsync(Guid id);
     
-    Task<List<Product>> GetProductsByCategoryIdAsync(Guid categoryId);
-    
-    Task CreateProduct(Product product);
+    Task CreateProductAsync(Product product);
+    Task DeleteProductAsync(Guid id);
+    Task UpdateProductAsync(Product product);
 }

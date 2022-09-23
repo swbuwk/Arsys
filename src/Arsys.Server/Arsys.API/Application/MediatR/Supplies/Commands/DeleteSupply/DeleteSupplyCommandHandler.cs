@@ -12,7 +12,7 @@ namespace Arsys.API.Application.MediatR.Supplies.Commands.DeleteSupply
 
         public async Task<Unit> Handle(DeleteSupplyCommand request, CancellationToken cancellationToken)
         {
-            await _supplyRepository.DeleteSupplyAsync(request.Id, cancellationToken);
+            await _supplyRepository.DeleteSupplyAsync(request.Id);
             return Unit.Value; //пустой ответ
         }
     }

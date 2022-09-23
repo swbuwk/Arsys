@@ -1,6 +1,7 @@
-﻿using Arsys.API.DTOs.CashDesk;
+﻿using Arsys.API.DTOs.CashDesk.ProductsDto;
 using Arsys.API.DTOs.Storage.SuppliesDto;
 using Arsys.DAL.Data.Repositories.Сommon.Interfaces;
+using AutoMapper.QueryableExtensions;
 
 namespace Arsys.API.Application.MediatR.Products.Queries.GetProductList;
 
@@ -18,7 +19,9 @@ public class GetProductListQueryHandler : IRequestHandler<GetProductListQuery, P
 
     public async Task<ProductListDto> Handle(GetProductListQuery request, CancellationToken cancellationToken)
     {
-        var products = await _productRepository.GetProductsByCategoryIdAsync(request.CategoryId);                                              
-        return new ProductListDto() {Products = products};
+        var productsQuery = await _productRepository.GetProductsByCategoryIdAsync(request.CategoryId)
+                                                    .ProjectTo<ProductDto>(_mapper.ConfigurationProvider)
+                                                    .ToListAsync();                                              
+        return new ProductListDto() {Products = productsQuery};
     }
 }

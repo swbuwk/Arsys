@@ -13,7 +13,7 @@ namespace Arsys.API.DTOs.Storage.SuppliesDto
 
         public void Mapping(Profile profile)
         {
-            profile.CreateMap<Supply, SupplyDto>() //прописывать связи для всех полей необязательно
+            profile.CreateMap<Supply, SupplyDto>()
                 .ForMember(dto => dto.Id,
                 opt => opt.MapFrom(supply => supply.Id))
                 .ForMember(dto => dto.SupplyDate,

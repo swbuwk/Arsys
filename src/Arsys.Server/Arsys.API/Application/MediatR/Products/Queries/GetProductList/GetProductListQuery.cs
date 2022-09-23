@@ -1,4 +1,4 @@
-﻿using Arsys.API.DTOs.CashDesk;
+﻿using Arsys.API.DTOs.CashDesk.ProductsDto;
 
 namespace Arsys.API.Application.MediatR.Products.Queries.GetProductList;
 

@@ -18,9 +18,9 @@ namespace Arsys.API.Application.MediatR.Supplies.Queries.GetListSupply
 
         public async Task<SupplyListDto> Handle(GetSupplyListQuery request, CancellationToken cancellationToken)
         {
-            var suppliesQuery = await _supplyRepository.Supplies                                                       
+            var suppliesQuery = await _supplyRepository.GetAllSuppliesAsync()                                                       
                                                        .ProjectTo<SupplyLookupDto>(_mapper.ConfigurationProvider)                                                       
-                                                       .ToListAsync(cancellationToken);
+                                                       .ToListAsync(); 
             
             return new SupplyListDto { Supplies = suppliesQuery };                                                       
         }

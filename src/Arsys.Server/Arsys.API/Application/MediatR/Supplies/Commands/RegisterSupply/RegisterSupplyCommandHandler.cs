@@ -23,7 +23,7 @@ namespace Arsys.API.Application.MediatR.Supplies.Commands.RegisterSupply
                 Products = request.Products
             };
 
-            await _supplyRepository.RegisterSupplyAsync(supply, cancellationToken);           
+            await _supplyRepository.RegisterSupplyAsync(supply);           
             return supply.Id;
         }
     }

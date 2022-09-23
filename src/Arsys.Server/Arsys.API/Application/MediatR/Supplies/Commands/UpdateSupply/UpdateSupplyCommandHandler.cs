@@ -1,4 +1,5 @@
 ﻿using Arsys.DAL.Data.Repositories.Storage.Interfaces;
+using Arsys.Domain.Entities.Storage;
 
 namespace Arsys.API.Application.MediatR.Supplies.Commands.UpdateSupply
 {
@@ -12,8 +13,9 @@ namespace Arsys.API.Application.MediatR.Supplies.Commands.UpdateSupply
 
         public async Task<Unit> Handle(UpdateSupplyCommand request, 
             CancellationToken cancellationToken)
-        {
-            await _supplyRepository.UpdateSupplyAsync(request.Id, cancellationToken);            
+        {            
+            var supply = await _supplyRepository.GetSupplyByIdAsync(request.Id); 
+            await _supplyRepository.UpdateSupplyAsync(supply);                                  
             return Unit.Value;
         }
     }

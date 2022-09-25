@@ -1,5 +1,4 @@
 ﻿using Arsys.DAL.Data.Repositories.Storage.Interfaces;
-using Arsys.Domain.Entities.Storage;
 
 namespace Arsys.API.Application.MediatR.Supplies.Commands.UpdateSupply
 {

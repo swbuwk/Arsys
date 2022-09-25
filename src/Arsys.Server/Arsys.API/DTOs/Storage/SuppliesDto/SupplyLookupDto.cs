@@ -1,4 +1,4 @@
-﻿using Arsys.API.Application.Common.Mappings;
+﻿using Arsys.API.Application.Mappings;
 using Arsys.Domain.Entities.Storage;
 
 namespace Arsys.API.DTOs.Storage.SuppliesDto

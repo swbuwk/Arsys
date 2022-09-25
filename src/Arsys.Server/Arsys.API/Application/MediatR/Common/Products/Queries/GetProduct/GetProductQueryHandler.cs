@@ -1,7 +1,9 @@
-﻿using Arsys.API.DTOs.CashDesk.ProductsDto;
+﻿using Arsys.API.Application.MediatR.Products.Queries.GetProduct;
+using Arsys.API.DTOs.CashDesk.ProductsDto;
+using Arsys.API.DTOs.Common.ProductsDto;
 using Arsys.DAL.Data.Repositories.Сommon.Interfaces;
 
-namespace Arsys.API.Application.MediatR.Products.Queries.GetProduct
+namespace Arsys.API.Application.MediatR.Common.Products.Queries.GetProduct
 {
     public class GetProductQueryHandler : IRequestHandler<GetProductQuery, ProductDto>
     {

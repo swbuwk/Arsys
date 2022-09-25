@@ -13,10 +13,9 @@ namespace Arsys.API.Application.MediatR.Supplies.Queries.GetSupply
             _mapper = mapper;
         }
 
-        public async Task<SupplyDto> Handle(GetSupplyQuery request,
-            CancellationToken cancellationToken)
+        public async Task<SupplyDto> Handle(GetSupplyQuery request, CancellationToken cancellationToken)
         {
-            var supply = await _supplyRepository.GetSupplyByIdAsync(request.Id, cancellationToken);
+            var supply = await _supplyRepository.GetSupplyByIdAsync(request.Id);
             return _mapper.Map<SupplyDto>(supply);
         }
     }

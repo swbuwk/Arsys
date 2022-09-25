@@ -1,5 +1,4 @@
-﻿using Arsys.Domain.Entities.CashDesk;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 using StackExchange.Redis;
 
 namespace Arsys.DAL.Data.Extensions;

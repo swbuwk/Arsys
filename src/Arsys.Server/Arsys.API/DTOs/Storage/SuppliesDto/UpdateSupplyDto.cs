@@ -1,4 +1,4 @@
-﻿using Arsys.API.Application.Common.Mappings;
+﻿using Arsys.API.Application.Mappings;
 using Arsys.API.Application.MediatR.Supplies.Commands.UpdateSupply;
 using Arsys.Domain.Entities.Common;
 

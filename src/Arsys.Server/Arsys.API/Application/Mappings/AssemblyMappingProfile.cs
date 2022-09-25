@@ -1,6 +1,4 @@
-﻿using System.Reflection;
-
-namespace Arsys.API.Application.Common.Mappings
+﻿namespace Arsys.API.Application.Mappings
 {
     public class AssemblyMappingProfile : Profile
     {

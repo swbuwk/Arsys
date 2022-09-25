@@ -1,6 +1,5 @@
-﻿using Arsys.API.Application.Common.Mappings;
+﻿using Arsys.API.Application.Mappings;
 using Arsys.API.Application.MediatR.Products.Commands.CreateProduct;
-using Arsys.API.Application.MediatR.Products.Commands.UpdateProduct;
 
 namespace Arsys.API.DTOs.CashDesk.ProductsDto
 {

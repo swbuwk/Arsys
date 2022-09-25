@@ -13,9 +13,8 @@ public class OrderRepository : IOrderRepository
     
     public async Task CreateOrderAsync(Order order)
     {
-        order.OrderDate = DateTime.Now;              
-        _appDbContext.AttachRange(order.Items.Select(i => i.Product));                        
-        
+        order.OrderDate = DateTime.Now;
+        order.Shipped = true;
         await _appDbContext.Orders.AddAsync(order);
         await SaveAsync();
     }

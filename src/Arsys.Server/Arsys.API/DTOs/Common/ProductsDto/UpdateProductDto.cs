@@ -1,12 +1,14 @@
-﻿using Arsys.API.Application.Common.Mappings;
+﻿using Arsys.API.Application.Mappings;
+using Arsys.API.Application.MediatR.Products.Commands.CreateProduct;
+using Arsys.API.Application.MediatR.Products.Commands.UpdateProduct;
 using Arsys.Domain.Entities.Common;
 
 namespace Arsys.API.DTOs.CashDesk.ProductsDto
 {
-    public class ProductDto : IMapWith<Product>
-    {        
+    public class UpdateProductDto : IMapWith<UpdateProductCommand>
+    {
         public Guid Id { get; set; }
-        
+
         public Guid CategoryId { get; set; }
 
         public string Name { get; set; }
@@ -19,7 +21,7 @@ namespace Arsys.API.DTOs.CashDesk.ProductsDto
 
         public void Mapping(Profile profile)
         {
-            profile.CreateMap<Product, ProductDto>()
+            profile.CreateMap<UpdateProductDto, UpdateProductCommand>()
                 .ForMember(dto => dto.Id,
                 opt => opt.MapFrom(p => p.Id))
                 .ForMember(dto => dto.CategoryId,

@@ -13,4 +13,8 @@
     <Folder Include="Enums\CashDesk.Enums" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="IronPdf" Version="2022.9.9056" />
+  </ItemGroup>
+
 </Project>

@@ -1,4 +1,8 @@
-﻿using Arsys.DAL.Data.Repositories.CashDesk.Interfaces;
+﻿using Arsys.API.Application.Mappings;
+using Arsys.API.Application.MediatR.CashDesk.Order.Commands.CheckoutOrder;
+using Arsys.API.Application.MediatR.CashDesk.Order.Queires.GetOrderQuery;
+using Arsys.API.DTOs.CashDesk.OrderDto;
+using Arsys.DAL.Data.Repositories.CashDesk.Interfaces;
 using Arsys.Domain.Entities.CashDesk;
 
 namespace Arsys.API.Controllers.CashDesk.Controllers;
@@ -7,20 +11,16 @@ namespace Arsys.API.Controllers.CashDesk.Controllers;
 [Route("api/[controller]")]
 public class OrderController : ControllerBase
 {
-    /*private readonly IShopCartRepository _shopCartRepository;
-    private readonly IOrderRepository _orderRepository;
-    public OrderController(IShopCartRepository shopCartRepository, IOrderRepository orderRepository)
+
+    private readonly IMediator _mediator;
+    private readonly IMapper _mapper;
+    public OrderController(IMediator mediator, IMapper mapper)
     {
-        _shopCartRepository = shopCartRepository;
-        _orderRepository = orderRepository;
+        _mediator = mediator;
+        _mapper = mapper;
     }
 
     [HttpPost]
-    public async Task<ActionResult> CreateOrder(Order order)
-    {
-        var cart = await _shopCartRepository.GetCart();
-        order.Items = cart.ShopCartItems;
-        await _orderRepository.CreateOrderAsync(order);
-        return Ok();
-    }*/
+    public async Task<ActionResult> CreateOrder([FromBody] OrderDto orderDto) =>
+        Ok(await _mediator.Send(_mapper.Map<CheckoutOrderCommand>(orderDto)));
 }

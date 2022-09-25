@@ -1,4 +1,4 @@
-﻿namespace Arsys.API.Application.Common.Mappings
+﻿namespace Arsys.API.Application.Mappings
 {
     public interface IMapWith<T>
     {

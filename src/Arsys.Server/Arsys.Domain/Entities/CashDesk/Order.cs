@@ -1,7 +1,10 @@
-﻿namespace Arsys.Domain.Entities.CashDesk;
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace Arsys.Domain.Entities.CashDesk;
 
 public class Order
 {
+    [Key]
     public Guid Id { get; set; }
     
     public bool Shipped { get; set; }

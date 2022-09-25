@@ -1,4 +1,4 @@
-using Arsys.API.Application.Common.Mappings;
+using Arsys.API.Application.Mappings;
 using Arsys.API.Services.CashDesk.Services.Interfaces;
 using Arsys.API.Services.CashDesk.Services.Services;
 using Arsys.DAL.Data;
@@ -45,10 +45,9 @@ builder.Services.AddTransient<IOrderService, OrderService>();
 builder.Services.AddTransient<ICategoryRepository, CategoryRepository>();
 builder.Services.AddTransient<ISupplyRepository, SupplyRepository>();
 builder.Services.AddTransient<IProductRepository, ProductRepository>();
-//builder.Services.AddTransient<IShopCartRepository, ShopCartRepository>();
+builder.Services.AddTransient<IShopCartRepository, ShopCartRepository>();
 builder.Services.AddTransient<IOrderRepository, OrderRepository>();
-//builder.Services.AddSingleton<IConnectionMultiplexer>(x =>
-    //ConnectionMultiplexer.Connect(builder.Configuration.GetConnectionString("RedisConnection")));
+builder.Services.AddSingleton<IConnectionMultiplexer>(ConnectionMultiplexer.Connect(builder.Configuration.GetConnectionString("RedisConnection")));
 
 
 var app = builder.Build();

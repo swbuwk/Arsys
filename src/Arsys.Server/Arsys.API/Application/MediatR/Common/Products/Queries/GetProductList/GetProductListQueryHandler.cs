@@ -1,5 +1,5 @@
 ﻿using Arsys.API.DTOs.CashDesk.ProductsDto;
-using Arsys.API.DTOs.Storage.SuppliesDto;
+using Arsys.API.DTOs.Common.ProductsDto;
 using Arsys.DAL.Data.Repositories.Сommon.Interfaces;
 using AutoMapper.QueryableExtensions;
 
